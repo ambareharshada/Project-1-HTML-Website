@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Tindog Template - Bootstrap</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Mukta:wght@200;300;400;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,500;1,600&family=RocknRoll+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap core CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .back-img {
+        background-image: url(img/dog-img.jpg);
+        background-size: cover;
+        height: 700px;
+      }
+      .nav-font-color li a {
+        color: white;
+        font-size: large;
+        font-weight: 500;
+        font-size: 17px;
+        padding-right: 25px !important;
+        font-family: "Roboto", sans-serif;
+      }
+      .nav-font-color li a:hover {
+        color: #ffb100;
+      }
+      .blog {
+        color: #000000 !important;
+        border-width: 0px !important;
+        border-radius: 6px !important;
+        letter-spacing: 4px;
+        font-size: 14px;
+        font-weight: 700 !important;
+        text-transform: uppercase !important;
+        background-color: #ffb100;
+        padding: 20px 40px;
+        margin-left: 75px;
+      }
+      .blog:hover {
+        background-color: antiquewhite;
+        transition: all 300ms ease 0ms;
+        content: "\35";
+      }
+      .footer-img {
+        background-image: linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0) 0%,
+            #2c2b4c 80%
+          ),
+          url(https://tindog.co/wp-content/uploads/2022/07/fatty-corgi-Zn5chZcnFRA-unsplash-1-1.jpg) !important;
+        height: 150px;
+        position: relative;
+        background-size: cover;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        padding: 0px !important;
+      }
+      .inside-img {
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIzdnciIHZpZXdCb3g9IjAgMCAxMjgwIDE0MCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSIjRkNGNUVEIj48cGF0aCBkPSJNMzIwIDI4QzE2MCAyOCA4MCA0OSAwIDcwVjBoMTI4MHY3MGMtODAgMjEtMTYwIDQyLTMyMCA0Mi0zMjAgMC0zMjAtODQtNjQwLTg0eiIvPjwvZz48L3N2Zz4=);
+        background-size: 100% 3vw;
+        top: 0;
+        height: 3vw;
+        z-index: 1;
+        transform: scale(-1, 1);
+      }
+      footer {
+        padding: 15px;
+        background-color: #fbfcff;
+        text-align: center;
+        color: black;
+        font-weight: 500;
+        font-size: 17px;
+        font-family: monospace;
+      }
+      .quick-links a {
+        color: #ff9c00;
+      }
+      .quick-links i {
+        font-size: xx-large;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid back-img">
+      <nav class="navbar navbar-expand-lg pl-5">
+        <a class="navbar-brand" href="#">
+          <img
+            src="img/cropped-tindog_logo_final-1-120x120.webp"
+            width="100"
+            height="100"
+            class="d-inline-block align-top"
+            alt=""
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav nav-font-color">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Dog Breeds & Personality</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Dog Training </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Dog Life </a>
+            </li>
+            <li class="nav-item mr-5">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <!-- <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            /> -->
+            <a class="btn my-2 my-sm-0 btn-transparent" type="submit">
+              <i class="fa fa-search"></i>
+            </a>
+          </form>
+        </div>
+      </nav>
+
+      <div>
+        <h1>
+          <span
+            style="
+              color: #00484f;
+              font-family: 'RocknRoll One', Helvetica, Arial, Lucida, sans-serif !important;
+              font-size: 80px;
+              margin-left: 75px;
+            "
+            >Tindog</span
+          >
+        </h1>
+        <h3
+          style="
+            margin-left: 75px;
+            font-weight: 600;
+            font-family: 'Barlow Semi Condensed', sans-serif !important;
+          "
+        >
+          <span style="color: #0c71c3">#1 Dog Magazine</span>
+        </h3>
+        <p>&nbsp;</p>
+      </div>
+      <div>
+        <button class="btn blog my-2 my-sm-0" type="submit">BLOG</button>
+      </div>
+    </div>
+    <div class="card-deck m-5">
+      <div class="card">
+        <img src="img/todd-mittens.webp" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">
+            Relief Vets: Enhancing the Quality of Life for Dogs through Expert
+            Care
+          </h5>
+          <p class="card-text">
+            <small class="text-muted">Jan 11, 2024 | Dog Care, Dog Life</small>
+          </p>
+          <p class="card-text">
+            Relief veterinarians are an essential part of the animal healthcare
+            industry. At Relief Vets, we offer veterinary relief services to
+            ensure that pet owners can access expert care for their furry
+            companions. Our team of dedicated relief veterinarians provides
+            top-notch care to enhance the quality...
+          </p>
+          <a href="#" class="card-link">Read more</a>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="img/close-up-veterinarian-taking-care-dog1.webp"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">
+            Paws and Preparedness: A Comprehensive Guide on Handling Pet
+            Emergencies
+          </h5>
+          <p class="card-text">
+            <small class="text-muted">Jan 9, 2024 | Dog Life, Dog Care</small>
+          </p>
+          <p class="card-text">
+            In the vibrant tapestry of life, our four-legged companions add
+            immeasurable joy and unconditional love to our daily existence. As
+            devoted pet parents, ensuring the safety and well-being of our furry
+            friends is not just a responsibility but a heartfelt commitment.
+            Yet, unforeseen emergencies can...
+          </p>
+          <a href="#" class="card-link">Read more</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/cole-wyland.webp" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">
+            Paws in Transition: Navigating the Journey of Moving with Your Furry
+            Companion
+          </h5>
+          <p class="card-text">
+            <small class="text-muted">Jan 9, 2024 | Dog Life</small>
+          </p>
+          <p class="card-text">
+            Moving is a transformative journey, marked by anticipation,
+            excitement, and the promise of new beginnings. However, for those
+            who share their lives with four-legged friends, the process of
+            relocating takes on a unique dimension. The transition from one home
+            to another can be a source of anxiety...
+          </p>
+          <a href="#" class="card-link">Read more</a>
+        </div>
+      </div>
+    </div>
+    <div class="card-deck m-5">
+      <div class="card">
+        <img src="img/AdobeStock_dog.webp" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">
+            Relief Vets: Enhancing the Quality of Life for Dogs through Expert
+            Care
+          </h5>
+          <p class="card-text">
+            <small class="text-muted">Jan 11, 2024 | Dog Care, Dog Life</small>
+          </p>
+          <p class="card-text">
+            Relief veterinarians are an essential part of the animal healthcare
+            industry. At Relief Vets, we offer veterinary relief services to
+            ensure that pet owners can access expert care for their furry
+            companions. Our team of dedicated relief veterinarians provides
+            top-notch care to enhance the quality...
+          </p>
+          <a href="#" class="card-link">Read more</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/caleb-fisher-dog.webp" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">
+            Paws and Preparedness: A Comprehensive Guide on Handling Pet
+            Emergencies
+          </h5>
+          <p class="card-text">
+            <small class="text-muted">Jan 9, 2024 | Dog Life, Dog Care</small>
+          </p>
+          <p class="card-text">
+            In the vibrant tapestry of life, our four-legged companions add
+            immeasurable joy and unconditional love to our daily existence. As
+            devoted pet parents, ensuring the safety and well-being of our furry
+            friends is not just a responsibility but a heartfelt commitment.
+            Yet, unforeseen emergencies can...
+          </p>
+          <a href="#" class="card-link">Read more</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="img/close-up-veterinarian-taking-care-dog1.webp"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">
+            Paws in Transition: Navigating the Journey of Moving with Your Furry
+            Companion
+          </h5>
+          <p class="card-text">
+            <small class="text-muted">Jan 9, 2024 | Dog Life</small>
+          </p>
+          <p class="card-text">
+            Moving is a transformative journey, marked by anticipation,
+            excitement, and the promise of new beginnings. However, for those
+            who share their lives with four-legged friends, the process of
+            relocating takes on a unique dimension. The transition from one home
+            to another can be a source of anxiety...
+          </p>
+          <a href="#" class="card-link">Read more</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid footer-img">
+      <div class="container-fluid inside-img"></div>
+    </div>
+    <div class="quick-links">
+      <div class="card-group">
+        <div class="card" style="border: 0px">
+          <div class="card-body">
+            <a href="#" class="card-link">
+              <i class="fa-brands fa-square-facebook"></i>
+            </a>
+            <a href="#" class="card-link">
+              <i class="fa-brands fa-square-twitter"></i>
+            </a>
+            <a href="#" class="card-link">
+              <i class="fa-brands fa-square-instagram"></i
+            ></a>
+            <a href="#" class="card-link">
+              <i class="fa-brands fa-square-youtube"></i>
+            </a>
+          </div>
+        </div>
+        <div class="card" style="border: 0px">
+          <div class="card-body">
+            <h5 class="card-title">Categories</h5>
+            <a href="#" class="card-link">Cat (66)</a> <br />
+            <a href="#" class="card-link">Dog Care (78)</a> <br />
+            <a href="#" class="card-link">Dog Life (14)</a> <br />
+            <a href="#" class="card-link">Dog Training (22)</a> <br />
+            <a href="#" class="card-link">Dog Behavier (34)</a>
+          </div>
+        </div>
+        <div class="card" style="border: 0px">
+          <div class="card-body">
+            <h5 class="card-title">Site Resources</h5>
+            <a href="#" class="card-link">About Us</a> <br />
+            <a href="#" class="card-link">Disclaimers</a> <br />
+            <a href="#" class="card-link">Terms of use</a> <br />
+            <a href="#" class="card-link">Privacy Policy</a> <br />
+            <a href="#" class="card-link">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer style="border-top: 1px solid rgba(0, 0, 0, 0.125)">
+      All Rights Reserved.
+    </footer>
+  </body>
+</html>
